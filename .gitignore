@@ -1,0 +1,23 @@
+# Licensed biometric data: never commit
+Data_FV_Spoofing_WS2025_26/
+kaggle/fvpad_data/
+*.zip
+
+# Third-party papers / course material
+papers/
+From Biometric Images to Feature Vectors.pdf
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+emb/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
