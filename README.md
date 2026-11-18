@@ -15,13 +15,13 @@ Group project (IPI, WS 2025/26). Datasets: IDIAP, SCUT and PLUS finger-vein spoo
 
 ## How to run Experiment 2 (short version)
 
-Full instructions: [`kaggle/2_exp2_kaggle_guide.md`](kaggle/2_exp2_kaggle_guide.md).
+**First time? Read the full guide:** [`kaggle/2_exp2_kaggle_guide.md`](kaggle/2_exp2_kaggle_guide.md). It covers the Kaggle account, dataset access, running the notebook and pushing the results. No local GPU is needed.
 
 1. Kaggle: *New Notebook → File → Import Notebook* and pick `kaggle/2_exp2_finetune_tinynet.ipynb`.
-2. *Add Input*: **fvpad-data** (the private dataset; ask the group owner for access, or build it with step 0).
+2. *Add Input*: **fvpad-data**. This is a private dataset: send your Kaggle username to the repo owner (`yasserfat`) to get access.
 3. Session options: *Accelerator* **GPU T4** or **P100**, *Internet* **On**.
 4. First set `QUICK = True` and click *Run All* (about 3 min) as a check. Then set `QUICK = False` and click *Save Version → Save & Run All* (about 1.5–3 h).
-5. Download `tinynet_runs.csv`, `tinynet_summary.csv` and `tinynet_predictions.csv` from the *Output* tab into `results/`, then commit them.
+5. Download `tinynet_runs.csv`, `tinynet_summary.csv` and `tinynet_predictions.csv` from the *Output* tab into `results/exp2/<setting>/` (e.g. `results/exp2/default/`), then commit and push them.
 
 ## Repository layout
 
